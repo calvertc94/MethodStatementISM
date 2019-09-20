@@ -10,10 +10,11 @@ namespace ISMMethods
 
                 try
                 {
+                    //Asks the user for input and then calls the HelloName method and passes on the value the method retuns
                     Console.WriteLine("Please input your name");
                     string Name = HelloName();
 
-                Console.WriteLine("Hello " + Name + "!");
+                    Console.WriteLine("Hello " + Name + "!");
 
                 }
 
@@ -25,6 +26,7 @@ namespace ISMMethods
 
         public static string HelloName()
         {
+            //Reads the line and stores it as a string in the method, returns the value of that string
             string UserName = Console.ReadLine();
 
             return UserName;
